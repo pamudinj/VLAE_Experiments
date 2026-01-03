@@ -2,7 +2,7 @@ import torch
 from torch import nn
 import torch.nn.functional as F
 import numpy as np
-import utils
+import src.utils as utils
 
 
 class Bernoulli():

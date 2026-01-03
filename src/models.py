@@ -3,9 +3,9 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torchvision.utils as vutils
 import numpy as np
-import distribution
-import network
-import utils
+import src.distribution as distribution
+import src.network as network
+import src.utils as utils
 
 n_importance_sample = 5000
 

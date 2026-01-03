@@ -4,8 +4,7 @@ from torchvision.datasets import MNIST
 from torchvision import transforms
 import numpy as np
 
-from models import VAE, VLAE, FullCovVAE
-from models import VLAE, FullCovVAE
+from src.models import VAE, VLAE, FullCovVAE
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 torch.manual_seed(0)
@@ -103,4 +102,3 @@ plt.savefig(f"{out_dir}/posterior_covariance2.png", dpi=150)
 plt.imshow(cov_vlae, cmap="gray")
 plt.axis("off")
 plt.savefig(f"{out_dir}/posterior_covariance3.png", dpi=150)
-

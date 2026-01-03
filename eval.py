@@ -1,6 +1,6 @@
 from __future__ import print_function
 import argparse
-from experiment import *
+from src.experiment import *
 
 
 parser = argparse.ArgumentParser(description='VLAE')

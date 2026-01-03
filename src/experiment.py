@@ -9,8 +9,8 @@ from torch import nn, optim
 import numpy as np
 from tensorboardX import SummaryWriter
 import colorful
-import datasets
-import models
+import src.datasets as datasets
+import src.models as models
 
 
 class Experiment():

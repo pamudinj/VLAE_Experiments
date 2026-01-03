@@ -90,9 +90,6 @@ for data in model_data:
     plt.scatter(data["best_step"], data["best_test_loss"], zorder=3, color="black")
 
     plt.annotate(
-        # f"Best epoch\nstep={best_step}\n"
-        # f"train loss={best_train_loss:.3f}\n"
-        # f"test loss={best_test_loss:.3f}\n"
         f"best epoch={data['best_step']}\nlog-likelihood={data['best_ll']:.1f}",
         (data["best_step"], data["best_test_loss"]),
         textcoords="offset points",
@@ -110,4 +107,3 @@ for data in model_data:
 
     plt.savefig(f"{out_dir}/train_vs_test_loss_{data['name']}.png", dpi=150)
     plt.close()
-

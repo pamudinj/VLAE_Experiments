@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 from torch.nn import functional as F
 import numpy as np
-import distribution
+import src.distribution as distribution
 
 
 class BaseEncoder(nn.Module):
